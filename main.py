@@ -33,6 +33,7 @@ all_articles = newsapi.get_everything(
 ######################################## TWILIO DATA #################################
 account_sid = os.environ.get('account_sid')
 auth_token = os.environ.get('auth_token')
+
 difference = float(yesterday_close) - float(day_before_yesterday_close)
 percent_difference = float(difference) / float(day_before_yesterday_close) * 100  # checks percentage difference of
 # stock
